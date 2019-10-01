@@ -77,10 +77,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:ems="10"
-        android:gravity="start|top"
         android:hint="@string/enter_address_hint"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="@+id/address_label"
+        app:layout_constraintBaseline_toBaselineOf="@+id/address_label"
         app:layout_constraintStart_toEndOf="@+id/address_label" />
 
 </android.support.constraint.ConstraintLayout>
