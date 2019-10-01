@@ -31,4 +31,6 @@
     <string name="address_label_text">Address</string>
     <string name="enter_address_hint">Enter address</string>
     <string name="enter_phone_hint">Enter phone</string>
+    <string name="note_label_text">Note</string>
+    <string name="enter_note_hint">Enter note</string>
 </resources>
