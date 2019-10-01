@@ -45,22 +45,20 @@ public class OrderActivity extends AppCompatActivity {
     public void onRadioButtonClicked(View view) {
         boolean checked = ((RadioButton) view).isChecked();
 
-        switch (view.getId()) {
-            case R.id.sameday:
-                if (checked)
+        if (checked)
+            switch (view.getId()) {
+                case R.id.sameday:
                     displayToast(getString(R.string.same_day_messenger_service));
-                break;
-            case R.id.nextday:
-                if (checked)
+                    break;
+                case R.id.nextday:
                     displayToast(getString(R.string.next_day_ground_delivery));
-                break;
-            case R.id.pickup:
-                if (checked)
+                    break;
+                case R.id.pickup:
                     displayToast(getString(R.string.pick_up));
-                break;
-            default:
-                break;
-        }
+                    break;
+                default:
+                    break;
+            }
     }
 
     public void displayToast(String message) {
