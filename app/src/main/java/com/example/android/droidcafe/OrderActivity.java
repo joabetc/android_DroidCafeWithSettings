@@ -86,7 +86,8 @@ public class OrderActivity extends AppCompatActivity implements
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
+        String spinnerLabel = adapterView.getItemAtPosition(i).toString();
+        displayToast(spinnerLabel);
     }
 
     @Override
