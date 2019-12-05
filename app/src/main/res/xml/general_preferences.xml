@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        android:key="full_name"
+        app:title="@string/pref_general_name_title"
+        app:summary="@string/pref_general_name_summary"
+        android:dialogTitle="@string/pref_general_name_dialog_title"
+        android:dialogMessage="@string/pref_general_name_dialog_message" />
+
+    <EditTextPreference
+        android:key="email_address"
+        android:title="@string/pref_general_email_title"
+        app:summary="@string/pref_general_email_summary"
+        android:dialogTitle="@string/pref_general_email_dialog_title"
+        android:dialogMessage="@string/pref_general_email_dialog_message" />
+
+    <ListPreference
+        android:defaultValue="US"
+        android:entries="@array/pref_delivery_values"
+        android:entryValues="@array/pref_delivery_values"
+        android:key="sync_frequency"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_account"
+        android:dialogTitle="@string/pref_general_delivery_dialog_title"/>
+
+</PreferenceScreen>

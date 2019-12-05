@@ -35,4 +35,10 @@
         app:key="account_header"
         android:title="@string/pref_header_account" />
 
+    <Preference
+        app:fragment="com.example.android.droidcafe.SettingsActivity$GeneralFragment"
+        app:icon="@drawable/ic_account_box_black_24dp"
+        app:key="general_header"
+        android:title="@string/pref_header_general" />
+
 </PreferenceScreen>
