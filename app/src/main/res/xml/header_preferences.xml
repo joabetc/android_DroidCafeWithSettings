@@ -14,18 +14,25 @@
   ~ limitations under the License.
   -->
 
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <Preference
         app:fragment="com.example.android.droidcafe.SettingsActivity$MessagesFragment"
         app:icon="@drawable/messages"
         app:key="messages_header"
-        app:title="@string/messages_header" />
+        app:title="@string/pref_header_messages" />
 
     <Preference
         app:fragment="com.example.android.droidcafe.SettingsActivity$SyncFragment"
         app:icon="@drawable/sync"
         app:key="sync_header"
-        app:title="@string/sync_header" />
+        app:title="@string/pref_header_sync" />
+
+    <Preference
+        app:fragment="com.example.android.droidcafe.SettingsActivity$AccountFragment"
+        app:icon="@drawable/ic_account_box_black_24dp"
+        app:key="account_header"
+        android:title="@string/pref_header_account" />
 
 </PreferenceScreen>

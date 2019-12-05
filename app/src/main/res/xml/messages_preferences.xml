@@ -18,7 +18,7 @@
 
     <EditTextPreference
         app:key="signature"
-        app:title="@string/signature_title"
+        app:title="@string/pref_messages_title_signature"
         app:useSimpleSummaryProvider="true" />
 
     <ListPreference
@@ -26,7 +26,7 @@
         app:entries="@array/reply_entries"
         app:entryValues="@array/reply_values"
         app:key="reply"
-        app:title="@string/reply_title"
+        app:title="@string/pref_messages_title_reply"
         app:useSimpleSummaryProvider="true" />
 
 </PreferenceScreen>
