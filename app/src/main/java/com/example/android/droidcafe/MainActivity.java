@@ -18,6 +18,7 @@ package com.example.android.droidcafe;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -63,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        PreferenceManager.setDefaultValues(this, R.xml.messages_preferences, false);
+        PreferenceManager.setDefaultValues(this, R.xml.sync_preferences, false);
+        PreferenceManager.setDefaultValues(this, R.xml.account_preferences, false);
     }
 
     /**
