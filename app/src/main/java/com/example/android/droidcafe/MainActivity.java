@@ -17,6 +17,7 @@
 package com.example.android.droidcafe;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -65,9 +66,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        PreferenceManager.setDefaultValues(this, R.xml.messages_preferences, false);
+        PreferenceManager.setDefaultValues(this, R.xml.messages_preferences,
+                false);
         PreferenceManager.setDefaultValues(this, R.xml.sync_preferences, false);
-        PreferenceManager.setDefaultValues(this, R.xml.account_preferences, false);
+        PreferenceManager.setDefaultValues(this, R.xml.account_preferences,
+                false);
+
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        String marketPref = sharedPref.getString("sync_frequency", "-1");
+        displayToast(marketPref);
     }
 
     /**
